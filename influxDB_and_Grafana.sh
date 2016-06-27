@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # AWS hostname
-AWS_EC2_HOSTNAME_URL=$(curl -s http://169.254.169.254/latest/meta-data/public-hostname) # http://169.254.169.254/latest/meta-data/public-hostname
+AWS_EC2_HOSTNAME_URL=$(curl -s http://169.254.169.254/latest/meta-data/public-hostname)
 
 # InfluxDB
 INFLUXDB_DATABASE=test1
