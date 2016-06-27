@@ -9,5 +9,6 @@ InfluxDB version 0.9.0 and Grafana version 2.6.0 have been successfully tested o
 
 # Tailing logs
 InfluxDB: tail -f  /var/log/influxdb/influxd.log
+
 Grafana:  tail -f /var/log/grafana/grafana.log
 
