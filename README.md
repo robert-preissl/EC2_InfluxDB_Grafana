@@ -7,6 +7,9 @@ InfluxDB version 0.9.0 and Grafana version 2.6.0 have been successfully tested o
 
 (Note, newer versions of InfluxDB and Grafana did not play well with each other. Gefana's influxDB plugin support InfluxDB version 0.8 and 0.9.)
 
+# Write data (from outside EC2):
+curl -i  -POST http://PublicDNS:8086/write?db=test1 --data-binary 'cpu_load_short,host=server01,region=us-west value=6.0'
+
 # Tailing logs
 InfluxDB: tail -f  /var/log/influxdb/influxd.log
 
